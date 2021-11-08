@@ -1,0 +1,89 @@
+<!---- file NAme: Javascript challenge-PasswordGenerator.
+      Date: Nove 7, 2021
+      Developed by: Mekonnen Mohammed
+      Discription: This App generate a password with the combination of Upper case
+                  lower case, numbers and symbols.To develop this app the course module
+                  allow me to use a starter code in the asignment section, and 
+                   to use some internet sources, but I have changed many of html section and 
+                   javascript to make better my code quality. 
+  ---->
+
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Password Generator</title>
+      <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+  
+    <body>
+      <!---this section control the whole HTMl-->
+      <section class="wrapper">
+        
+        <header>
+          <h1>Password Generator</h1>
+        </header>
+  
+  
+        <div class="card">
+          <div class="col-lg-8 col-sm-12 mx-auto">
+               <h2>Generate a Password</h2>
+          </div>
+  
+          <div class="content">
+                <h4>Read Pasword Generator</h4>
+                <br/>
+                <input type="text" id= "display">
+                <br/>
+                
+                <br/>
+          </div>
+          
+          <div class="card-footer">
+                <button onclick= "generate()"  class="btn">Generate Password</button>
+                <button  class = "clipboard"> Copy on Clipboard</button>
+          </div>
+          <div class = "setting">
+            <div class = "setting">
+                  <label for="length">Pasword Length</label>
+                  <input type="number" id ="numberlength" min="8" max ="124" value =""/>
+            </div>
+            <div class="setting">
+                <label  for="uppercase">Include uppercase letters</label>
+                <input type="checkbox" id ="uppercase" checked/>
+            </div>
+            <div class="setting">
+                  <label for="lowercase">Include lowercase letters</label>
+                  <input type="checkbox" id ="lowercase" checked/>
+             </div>
+              <div class="setting">
+                    <label for="numbers">Include numbers</label>
+                    <input type="checkbox" id ="number" checked/>
+              </div>
+              <div class="setting">
+                    <label for="symbol">Include symbols</label>
+                    <input type="checkbox" id ="symbols" checked/>
+              </div>
+           </div>
+  
+
+
+              <div id = "length">             
+              </div>
+  
+                  <b>Previous generated password</b>
+  
+              <div class= "previousPassword">
+                      <br/>
+                  <div id= "lastNums"></div>
+              </div>
+        </div>
+      </section>
+      
+      <script src="./assets/js/script.js"></script>
+  
+    </body>
+  </html>
+  
