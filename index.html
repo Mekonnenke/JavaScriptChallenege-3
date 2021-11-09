@@ -1,5 +1,5 @@
 <!---- file NAme: Javascript challenge-PasswordGenerator.
-      Date: Nove 7, 2021
+      Date: Nov 4, 2021
       Developed by: Mekonnen Mohammed
       Discription: This App generate a password with the combination of Upper case
                   lower case, numbers and symbols.To develop this app the course module
@@ -22,9 +22,9 @@
       <!---this section control the whole HTMl-->
       <section class="wrapper">
         
-        <header>
-          <h1>Password Generator</h1>
-        </header>
+         <header>
+            <h1>Password Generator</h1>
+         </header>
   
   
         <div class="card">
@@ -32,7 +32,7 @@
                <h2>Generate a Password</h2>
           </div>
   
-          <div class="content">
+      <div class="content">
                 <h4>Read Pasword Generator</h4>
                 <br/>
                 <input type="text" id= "display">
@@ -42,7 +42,7 @@
           </div>
           
           <div class="card-footer">
-                <button onclick= "generate()"  class="btn">Generate Password</button>
+                <button onclick= "generate()" id = "generate" class="btn">Generate Password</button>
                 <button  class = "clipboard"> Copy on Clipboard</button>
           </div>
           <div class = "setting">
@@ -52,19 +52,19 @@
             </div>
             <div class="setting">
                 <label  for="uppercase">Include uppercase letters</label>
-                <input type="checkbox" id ="uppercase" checked/>
+                <input type="checkbox" name= "uppercase" id ="uppercase" checked/>
             </div>
             <div class="setting">
                   <label for="lowercase">Include lowercase letters</label>
-                  <input type="checkbox" id ="lowercase" checked/>
+                  <input type="checkbox" name= "lowercase" id ="lowercase" checked/>
              </div>
               <div class="setting">
                     <label for="numbers">Include numbers</label>
-                    <input type="checkbox" id ="number" checked/>
+                    <input type="checkbox" name= "number" id ="number" checked/>
               </div>
               <div class="setting">
                     <label for="symbol">Include symbols</label>
-                    <input type="checkbox" id ="symbols" checked/>
+                    <input type="checkbox" name= "sybmol" id ="symbol" checked/>
               </div>
            </div>
   

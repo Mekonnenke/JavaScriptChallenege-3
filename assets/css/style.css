@@ -112,24 +112,26 @@ a:hover{
   transition: .2s transform ease-in-out;
   will-change: transform;
   z-index: 0;
-
-
 }
-
-
-
-.btn:hover::after
-{ 
-    transform: translate(0, 0);
-}  
-  btn:hover
+ 
+  .btn:hover
   { 
     border: 2px solid transparent;
-    color: indigo;
-    transform: scale(1.05);
-    will-change: transform;
+    color: #FFF;
+    background-color: indigo;
+    border: 2px solid currentColor;
     
   } 
+  .clipboard:hover
+  {
+    
+      border: 2px solid transparent;
+      color: #FFF;
+      background-color: indigo;
+      border: 2px solid currentColor;
+      
+    }
+  
 
   input[type= 'checkbox']
   {
@@ -206,7 +208,7 @@ a:hover{
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 570px) {
   .btn {
     font-size: 0.8rem;
   }
