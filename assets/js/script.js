@@ -4,25 +4,34 @@ var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var lowercase = "abcdefghijklmnopqrstuvwxyz";
 var number = "0123456789";
 var symbol = "!@#$%^&*()_+=-}{[]?/>.<,':;`~/\|";
-
+var value  =[] ;
 var uppercaseEl = document.getElementById("uppercase");
-var lowercaseEl = document.getElementById("uppercase");
+var lowercaseEl = document.getElementById("lowercase");
+var numberEl = document.getElementById("number");
+var symbolEl = document.getElementById("symbol");
 
+ 
 
-var value = [uppercase] +[lowercase] + [symbol] + [number];
-
-
- function checkBox ()
- {
-    
-   if  (uppercaseEl.checked == false)
-  
-   {
-      value != uppercase;
-   }
-  
-  
- }
+if ( uppercaseEl.checked)
+{
+  value = [lowercase]  + [number] + [symbol];
+}
+else if ( lowercaseEl.checked)
+{
+  value = [uppercase]  + [number] + [symbol];
+}
+else if ( numberEl.checked)
+{
+  value = [uppercase] + [lowercase] + [symbol];
+}
+else if ( symbolEl.checked)
+{
+  value = [uppercase] + [lowercase] + [number];
+}
+else
+{
+  value = [uppercase] + [lowercase] + [symbol]+ [number] ;
+}
 
 
 
@@ -32,34 +41,39 @@ function generate () {
 
 //   // Get references to the #generate element
 var passValue = document.getElementById( "numberlength" ).value;
+var checkbox = document.getElementsByClassName("checkbox");
 var password = "";
 
 
  for (var i =0; i <= passValue; i++)
  {
-    password = password + value.charAt( Math.floor( Math.random () * Math.floor( value.length - 1 )));
+    password = password + value.charAt( Math.floor( Math.random () * ( value.length - 1 )));
     
+   
   }
-
+ 
+  
  // // Add event listener to generate button
 document.getElementById("display").value = password;
-DocumentFragment.execCommand
+DocumentFragment.execCommand;
 
 //add pasword to previously generated passwords section
 document.getElementById("lastNums" ).innerHTML += password ;
+
+
 }
 
 // //default length to display
  document.getElementById( "length" ).innerHTML = "length: 124";
 
-// //function to set length based on slide position
+// //function to set length based on display position
 document.getElementById( "numberlength" ).oninput = function ()
 {
-     value.checkBox ()
+  
     if ( document.getElementById( "numberlength" ).value >0 )
     {
  
-        document.getElementById( 'length' ).innerHTML ="length:" +  document.getElementById("numberlength" ).value  + "\n";  
+        document.getElementById( 'length'  ).innerHTML ="length:"  +  document.getElementById("numberlength" ).value + "\n";  
         
     }
     else{

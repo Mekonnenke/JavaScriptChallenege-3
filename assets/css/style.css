@@ -131,7 +131,10 @@ a:hover{
       border: 2px solid currentColor;
       
     }
-  
+  #lastNums{
+    margin-right : 300px
+
+            }
 
   input[type= 'checkbox']
   {
