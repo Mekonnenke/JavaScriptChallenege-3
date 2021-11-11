@@ -15,3 +15,7 @@ if thesymbol click on it does not generate symbol values.
 * This code generator app is the third challenge of code camping/javascript challenege
 on this challenege I use id  and classes to initial element in the variable such us
 numberLength, uppercase, lowercase, number, symbol and length. 
+ this is a git hub
+https://mekonnenke.github.io/JavaScriptChallenege-3/
+this is a URL
+https://github.com/Mekonnenke/JavaScriptChallenege-3
