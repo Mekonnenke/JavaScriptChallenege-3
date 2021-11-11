@@ -4,47 +4,49 @@ var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";        //ASCHII value 65- 90
 var lowercase = "abcdefghijklmnopqrstuvwxyz";       // ASCHII value 97= 122
 var number = "0123456789";                       //ASCHII value 48 -57
 var symbol = "!@#$%^&*()_+=-}{[]?/>.<,':;`~/\|";           //ASCHII value 33-47 , 59-64,
-var value  = [uppercase] + [lowercase] + [symbol]+ [number] ;
+
 var uppercaseEl = document.getElementById("uppercase");
 var lowercaseEl = document.getElementById("lowercase");
 var numberEl = document.getElementById("number");
 var symbolEl = document.getElementById("symbol");
 
-if (( !uppercaseEl.checked ) && ( !lowercaseEl.checked ) && 
-( !numberEl.checked ) &&  ( !symbolEl.checked ))
-{
-  value = [uppercase] + [lowercase] + [symbol]+ [number] ;
+function checkBox(uppercase, lowercase, number, symbol)
+{ 
+
+  
+// if (uppercaseEl.checked == true)
+// {
+//   value = document.getElementById("uppercase").checked.value -[uppercase]
+
+// }
+ if ( lowercase.document.getElementById("lowercase").checked.value -[lowercase] )
+{ lowercaseEl.checked == false
+   
 }
-else if ( uppercaseEl.checked)
+else if ( numberEl.checked == true)
 {
-  value = [lowercase]  + [number] + [symbol];
+  value =  document.getElementById("number").checked[uppercase] + [lowercase] + [symbol];
 }
-else if ( lowercaseEl.checked)
+else if ( symbolEl.checked == true)
 {
-  value = [uppercase]  + [number] + [symbol];
+  value = document.getElementById("symbol")[uppercase] + [lowercase] + [number];
 }
-else if ( numberEl.checked)
+else 
 {
-  value = [uppercase] + [lowercase] + [symbol];
-}
-else if ( symbolEl.checked)
-{
-  value = [uppercase] + [lowercase] + [number];
-}
-else
-{
-  value = 0 ;
+  value = document.getElementById( )/checked.value
+  [uppercase] + [lowercase] + [number] + [symbol];
 }
 
+
+}
 
 
 
 // // Write password to the #password input
 function generate () {
-
+  checkBox(uppercase, lowercase, number, symbol)
 //   // Get references to the #generate element
 var passValue = document.getElementById( "numberlength" ).value;
-var checkbox = document.getElementsByClassName("checkbox");
 var password = "";
 
 
