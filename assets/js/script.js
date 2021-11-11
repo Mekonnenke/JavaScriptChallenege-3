@@ -22,20 +22,18 @@ value = [uppercase] + [lowercase] + [number] + [symbol];
 if ( uppercaseEl.checked == true)
 {
   value = document.getElementById("uppercase").checked.value -[uppercase] 
-
 }
-
  else if ( lowercaseEl.checked == true)
 {
   value = document.getElementById("lowercase").checked.value -[lowercase] 
 }
 else if ( numberEl.checked == true)
 {
-  value =  document.getElementById("number")[uppercase] + [lowercase] + [symbol];
+  value =  document.getElementById("number")[uppercase] + [lowercase] + [symbol]
 }
 else if ( symbolEl.checked == true)
 {
-  value = document.getElementById("symbol")[uppercase] + [lowercase] + [number];
+  value = document.getElementById("symbol")[uppercase] + [lowercase] + [number]
 }
 else 
 {
